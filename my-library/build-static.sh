@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "[lib] build static library"
-
 dist=out/static
 rm -rf ${dist}
 mkdir -p ${dist}

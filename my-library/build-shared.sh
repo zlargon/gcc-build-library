@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "[lib] build shared library"
-
 dist=out/shared
 rm -rf ${dist}
 mkdir -p ${dist}

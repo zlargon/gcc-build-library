@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "[app] build app with static library"
-
 root=$(pwd)
 
 rm -rf out
