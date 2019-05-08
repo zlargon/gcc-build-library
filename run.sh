@@ -21,7 +21,7 @@ cd ${root}/my-app
 
 echo_y "Run static app\n"
 cd out
-./static-app.exe
+./static/app.exe
 
 echo -e "\n----------------------------------------------------------\n"
 
@@ -35,4 +35,4 @@ cd ${root}/my-app
 
 echo_y "Run shared app\n"
 cd out
-LD_LIBRARY_PATH=${root}/my-library/out/shared ./shared-app.exe
+LD_LIBRARY_PATH=${root}/my-library/out/shared ./shared/app.exe
