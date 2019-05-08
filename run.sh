@@ -15,24 +15,24 @@ echo_y "[lib] build static library"
 cd ${root}/my-library
 ./build-static.sh
 
-echo_y "\n[app] build app with static library"
+echo_y "[app] build app with static library"
 cd ${root}/my-app
 ./build-static.sh
 
-echo_y "\n[run] run static app"
+echo_y "Run static app\n"
 cd out
 ./static-app.exe
 
-echo -e "\n----------------------------------------------------------"
+echo -e "\n----------------------------------------------------------\n"
 
-echo_y "\n[lib] build shared library"
+echo_y "[lib] build shared library"
 cd ${root}/my-library
 ./build-shared.sh
 
-echo_y "\n[app] build app with shared library"
+echo_y "[app] build app with shared library"
 cd ${root}/my-app
 ./build-shared.sh
 
-echo_y "\n[run] run shared app"
+echo_y "Run shared app\n"
 cd out
-./shared-app.exe
+LD_LIBRARY_PATH=${root}/my-library/out/shared ./shared-app.exe
